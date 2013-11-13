@@ -1,0 +1,108 @@
+
+ import bootstrap 
+@import url("css/dropdowns_bootstrap.css");
+@import url("css/navbar_bootstrap.css");
+@import url("css/navs_bootstrap.css");
+
+
+/*Bootstrap Navbar*/
+.navbar {
+    margin-bottom: 0px;
+}
+.navbar-inner {
+    background-color: transparent;
+    background-image: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+    border: 0px;
+    /*border-radius: 4px;*/
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.navbar .nav {
+    margin: 0;
+}
+.navbar .nav > li {
+    float: left;
+	margin:0px;
+}
+.navbar .nav > li > a {
+    color: #003668;
+    padding: 30px 10px 0px 10px;
+    text-shadow: 0 0px 0 #FFFFFF;
+	height:53px;
+}
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    background-color: #93A4AC;
+    color: #003668;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: #93A4AC;
+  color: #003668;
+}
+.dropdown-menu {
+    background-color: #93A4AC;
+    border: none;
+    -webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    margin: 0;
+}
+.navbar .nav > li > .dropdown-menu:before {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+	border-bottom-color: none;
+}
+.navbar .nav > li > .dropdown-menu:after {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+/*Bootstrap Navbar*/
+
+/*Bootstrap Dropdown*/
+.dropdown-menu > li > a {
+	color:#003668;
+    padding: 3px 10px;
+}
+.dropdown-submenu > .dropdown-menu {
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  border-radius: none;
+}
+.dropdown-submenu > a:after {
+    /*border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #CCCCCC;*/
+    border-style: none;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
+    background-color: #003668;
+    background-image: none;
+    color: #FFFFFF;
+}
+/*Bootstrap Dropdown*/
+
+/*Bootstrap Costum*/
+.navbar .nav > li > a {
+	line-height:18px;
+}
+.navbar .nav > li > a > span{
+	display:block;
+}
+/*Bootstrap Costum*/
+
+/*Bootstrap Dropdown Hover*/
+ul.nav li.dropdown:hover > ul.dropdown-menu{ 
+  display: block; 
+}
+/*Bootstrap Dropdown Hover*/
