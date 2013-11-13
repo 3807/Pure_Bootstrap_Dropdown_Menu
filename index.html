@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+<title>Pure Bootstrap Dropdown Menu</title>
+
+  <link rel="stylesheet" href="css/dropdowns_bootstrap.css"/>
+  <link rel="stylesheet" href="css/navbar_bootstrap.css"/>
+  <link rel="stylesheet" href="css/navs_bootstrap.css"/>
+  
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  
+</head>
+
+<body>
+
+          <div class="navbar">
+            <div class="navbar-inner">
+              <ul class="nav">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Level1</span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#"><span>Level2</span></a></li>
+                    <li><a href="#"><span>Level2</span></a></li>
+                    <li><a href="#"><span>Level2</span></a></li>
+                  </ul>
+                </li>
+                <li><a href="#"><span>Level1</span></a></li>
+                <li><a href="#"><span>Level1</span></a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>Level1</span><span>Level1</span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#"><span>Level2</span></a></li>
+                    <li><a href="#"><span>Level2</span></a></li>
+                    <li class="dropdown-submenu">
+                    <a href="#"><span>Level1</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#"><span>Level3</span></a></li>
+                      <li><a href="#"><span>Level3</span></a></li>
+                    </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+<script>
+/*<li class=".dropdown" Hover*/
+$(document).ready(function() {
+	$('.dropdown').mouseover(function(){
+		var liElement=$(this);
+		$('.dropdown-menu').mouseover(liElement.css("background-color","#93A4AC"));
+		});
+	$('.dropdown-menu').mouseout(function(){
+		$('.dropdown').css("background-color","transparent");
+		});
+	$('.dropdown').mouseout(function(){
+		$(this).css("background-color","transparent");
+		});
+});
+/*<li class=".dropdown" Hover*/
+</script>
+
+</body>
+</html>
